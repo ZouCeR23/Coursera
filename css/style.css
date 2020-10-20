@@ -82,6 +82,7 @@ p {
 @media (max-width: 767px) {
     .sections {
         display: block;
+        width: 90%;
     }
 
     section {

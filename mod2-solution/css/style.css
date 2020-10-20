@@ -2,26 +2,90 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-size: 62.5%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 h1 {
     text-align: center;
     margin: 20px auto;
+    font-size: 5rem;
 }
 section, section>div {
-    border: 2px solid black;
+    border: 1px solid black;
 
 }
 
 section {
     background: rgb(180, 180, 180);
-    float: initial;
+    width: 30%;
+
 }
 section>div {
     float: right;
-    width: 100px;
+    width: 150px;
+    text-align: center;
+    position: relative;
+    bottom: 1px;
+    left: 1px;
+    font-size: 14em;
 }
 
 p {
     clear: both;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 7em;
+}
+
+.sections {
+    margin: auto;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#chicken>div {
+    background: rgb(247, 148, 148);
+}
+
+#beef>div {
+    background: crimson;
+    color: white;
+}
+
+#sushi>div {
+    background: rgb(240, 238, 138);
+}
+
+@media (max-width: 991px ) {
+    .sections {
+        display: block;
+    }
+
+    section {
+    width: 45%;
+    float: left;
+    margin-bottom: 40px;
+    }
+
+    #chicken {
+        margin-right: 10%;
+    }
+
+    #sushi {
+        clear: left;
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .sections {
+        display: block;
+    }
+
+    section {
+    width: 100%;
+    float: none;
+    }
 }
